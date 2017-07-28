@@ -4,8 +4,6 @@ from flask import Flask, session
 
 app = Flask(__name__)
 
-# Generate a secret random key for the session
-app.secret_key = os.urandom(24)
 
 # Define a route for the webserver
 @app.route('/')
